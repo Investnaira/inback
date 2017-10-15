@@ -1,11 +1,27 @@
 // load the things we need
 var mongoose = require('mongoose');
 var bcrypt   = require('bcrypt-nodejs');
+var Schema = mongoose.Schema;
 
 // define the schema for our user model
-var userSchema = mongoose.Schema({
+var transactionSchema = new Schema({
+    date: String,
+    description: {
+        type: String,
+        enum: ['withdrawal', 'deposit', 'yield',]
+      },
+      // status: {
+      //     type: String,
+      //     enum: ['completed', 'pending', 'failed',]
+      //   },
+    amount: Number,
+    balance: Number,
+})
 
+var userSchema = Schema({
+  //  transaction             : {type: Schema.ObjectId, ref: 'Transaction'},
     local            : {
+
         email        : String,
         password     : String
     },
@@ -26,7 +42,19 @@ var userSchema = mongoose.Schema({
         token        : String,
         email        : String,
         name         : String
-    }
+    },
+    overview : {
+        name     : String,
+       balance      : Number,
+       deposit      : Number,
+       withdrawn      : Number,
+       returns      : Number,
+
+    },
+      transaction : [transactionSchema]
+
+
+
 
 });
 

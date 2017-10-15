@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<!-- Document Character Encoding Metadata -->
+    <meta charset="UTF-8">
+
+    <!-- Document HTTP Equivalent Compatibility Metadata -->
+    <meta content="chrome=1, IE=Edge" http-equiv="X-UA-Compatible">
+
+    <!-- Document Viewport Metadata -->
+    <meta
+        content="
+            height=device-height,
+            initial-scale=1.0,
+            maximum-scale=2.0,
+            minimal-ui,
+            minimum-scale=0.1,
+            user-scalable=no,
+            width=device-width"
+        target-densitydpi="92dpi"
+        name="viewport">
+
+    <!-- Miscellaneous Metadata -->
+        <!-- Author -->
+        <meta content="Lapys Dev Team" name="author">
+
+    <!-- Stylesheets -->
+        <!-- LapysJS Stylesheet -->
+        <link href="assets/css/lapys.css" media="all" rel="stylesheet" type="text/css">
+        <!-- font awesome -->
+        <link href="assets/css/font-awesome.css" media="all" rel="stylesheet" type="text/css">
+
+        <!-- Base Stylesheet -->
+        <link href="assets/css/base.css" media="all" rel="stylesheet" type="text/css">
+
+        <!-- Document Stylesheet -->
+        <link href="assets/css/landing.css" media="all" rel="stylesheet" type="text/css">
+        <link rel="icon" type="ico/x-ico" href="img/ico/favicon.ico">
+
+	<title>dashboard/investNaira</title>
+</head>
+<body>
+<div class="container">
+	<div class="header">
+	<div class="logo_house"><img src="assets/img/png/brand2-invert.png"></div>
+  <ul class="nav">
+        <li><a href="/">Home</a> </li>
+        <li><a href="#">Forum</a> </li>
+        <li><a href="#">Blog</a> </li>
+        <li class="active1"><a href="/dashboard">Dashboard</a> </li>
+        <li><a href="/profile">Profile</a> </li>
+    </ul>
+	<div class="beside_me" id="beside_me1" >
+  <span onclick="help()">&#x2630;</span>
+</div>
+<div class="beside_me" id="beside_me2" style="display: none;">
+  <span onclick="help2()">&#x2630;</span>
+</div>
+</div>
+<div class="sec_pho">
+	<div class="header2">
+    <ul class="nav2">
+    <li><a href="/dashboard"><i class="fa fa-th"></i> overview</a></li>
+        <li><a href="/save"><i class="fa fa-send"></i> save</li>
+        <li><a href="/invest"><i class="fa fa-money"></i> invest</li>
+        <li><a href="/compound"><i class="fa fa-bar-chart"></i> compound wealth</a></li>
+        <li><a href="/invite"><i class="fa fa-users"></i> invite friends</a></li>
+
+    </ul>
+
+	</div>
+
+	<div class="dasee2">
+	<ul class="nav3"><li><i class="fa fa-bar-chart"></i> compound wealth</li></ul>
+			<div class="beside_me2">
+			<span onclick="openNav()">
+			&#8226;
+			 &#8226;
+			 &#8226;
+			 </span>
+
+</div>
+		</div>
+		<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <ul class="nav3">
+        <li><a href="/dashboard"><i class="fa fa-th"></i> overview</a></li>
+            <li><a href="/save"><i class="fa fa-send"></i> save</a></li>
+            <li><a href="/invest"><i class="fa fa-money"></i> invest</a></li>
+            <li><a href="/compound"><i class="fa fa-bar-chart"></i> compound wealth</a></li>
+            <li><a href="/invite"><i class="fa fa-users"></i> invite friends</a></li>
+
+        </ul>
+</div>
+
+	<div class="floats_on" id="main">
+	<div class="people_profile">
+	<div class="people_pics">
+		<img src="assets/img/png/pexels-photo-567458.jpeg">
+		<div class="people_pics_words">
+			<p class="history_profile">
+				Name: <strong>Toni Nathaniel</strong><br/>
+			<br/>
+			Qualification: <strong>MBA, CFA</strong><br/><br/>
+			Workplace: <strong>Devtage Consulting</strong><br />
+			<br>
+			years of experience: <strong>8 years</strong><br><br>
+			<!-- Rating:
+			<i class="fa fa-star" style="color: #00A65A;"></i>
+			<i class="fa fa-star" style="color: #00A65A;"></i>
+			<i class="fa fa-star-half-o" style="color: #00A65A;"></i>
+			<i class="fa fa-star-o" style="color: #00A65A;"></i>
+			<i class="fa fa-star-o" style="color: #00A65A;"></i> -->
+			</p>
+			<span class="center_me"
+			><h4>contact</h4>
+			<i class="fa fa-facebook"></i><span class="opa_pro_level">Toni Nathaniel</span>
+		<i class="fa fa-twitter"></i><span class="opa_pro_level">Toni Nathaniel</span>
+		<i class="fa fa-skype"></i><span class="opa_pro_level">Toni Nathaniel</span>
+
+
+
+			</span>
+		</div>
+	</div>
+
+	</div>
+  <div class="people_profile">
+	<div class="people_pics">
+		<img src="assets/img/png/pexels-photo-567458.jpeg">
+		<div class="people_pics_words">
+			<p class="history_profile">
+				Name: <strong>Toni Nathaniel</strong><br/>
+			<br/>
+			Qualification: <strong>MBA, CFA</strong><br/><br/>
+			Workplace: <strong>Devtage Consulting</strong><br />
+			<br>
+			years of experience: <strong>8 years</strong><br><br>
+			<!-- Rating:
+			<i class="fa fa-star" style="color: #00A65A;"></i>
+			<i class="fa fa-star" style="color: #00A65A;"></i>
+			<i class="fa fa-star-half-o" style="color: #00A65A;"></i>
+			<i class="fa fa-star-o" style="color: #00A65A;"></i>
+			<i class="fa fa-star-o" style="color: #00A65A;"></i> -->
+			</p>
+			<span class="center_me"
+			><h4>contact</h4>
+			<i class="fa fa-facebook"></i><span class="opa_pro_level">Toni Nathaniel</span>
+		<i class="fa fa-twitter"></i><span class="opa_pro_level">Toni Nathaniel</span>
+		<i class="fa fa-skype"></i><span class="opa_pro_level">Toni Nathaniel</span>
+
+
+
+			</span>
+		</div>
+	</div>
+
+	</div>
+  <div class="people_profile">
+  <div class="people_pics">
+    <img src="assets/img/png/pexels-photo-567458.jpeg">
+    <div class="people_pics_words">
+      <p class="history_profile">
+        Name: <strong>Toni Nathaniel</strong><br/>
+      <br/>
+      Qualification: <strong>MBA, CFA</strong><br/><br/>
+      Workplace: <strong>Devtage Consulting</strong><br />
+      <br>
+      years of experience: <strong>8 years</strong><br><br>
+      <!-- Rating:
+      <i class="fa fa-star" style="color: #00A65A;"></i>
+      <i class="fa fa-star" style="color: #00A65A;"></i>
+      <i class="fa fa-star-half-o" style="color: #00A65A;"></i>
+      <i class="fa fa-star-o" style="color: #00A65A;"></i>
+      <i class="fa fa-star-o" style="color: #00A65A;"></i> -->
+      </p>
+      <span class="center_me"
+      ><h4>contact</h4>
+      <i class="fa fa-facebook"></i><span class="opa_pro_level">Toni Nathaniel</span>
+    <i class="fa fa-twitter"></i><span class="opa_pro_level">Toni Nathaniel</span>
+    <i class="fa fa-skype"></i><span class="opa_pro_level">Toni Nathaniel</span>
+
+
+
+      </span>
+    </div>
+  </div>
+
+  </div>
+
+
+	</div>
+
+	<script type="text/javascript">
+
+
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "300px";
+    document.getElementById("main").style.marginLeft = "300px";
+    document.body.style.backgroundColor = "rgba(0,0,0,7)";
+     document.getElementById("mySidenav").style.zIndex = "500";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
+<script type="text/javascript" src="assets/js/iye.js"></script>
+
+</body>
+</html>

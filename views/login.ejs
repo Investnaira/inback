@@ -1,48 +1,133 @@
-<!doctype html>
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Node Authentication</title>
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
-    <style>
-        body         { padding-top:80px; }
-    </style>
+<!-- Document Character Encoding Metadata -->
+    <meta charset="UTF-8">
+
+    <!-- Document HTTP Equivalent Compatibility Metadata -->
+    <meta content="chrome=1, IE=Edge" http-equiv="X-UA-Compatible">
+
+    <!-- Document Viewport Metadata -->
+    <meta
+        content="
+            height=device-height,
+            initial-scale=1.0,
+            maximum-scale=2.0,
+            minimal-ui,
+            minimum-scale=0.1,
+            user-scalable=no,
+            width=device-width"
+        target-densitydpi="92dpi"
+        name="viewport">
+
+    <!-- Miscellaneous Metadata -->
+        <!-- Author -->
+        <meta content="Lapys Dev Team" name="author">
+
+    <!-- Stylesheets -->
+        <!-- LapysJS Stylesheet -->
+       <!--  <link href="/assets/css/lapys.css" media="all" rel="stylesheet" type="text/css"> -->
+        <!-- font awesome -->
+        <link href="/assets/css/font-awesome.css" media="all" rel="stylesheet" type="text/css">
+        <!-- javascript -->
+        <script type="text/javascript" src="/assets/js/iye.js"></script>
+        <script type="text/javascript" src="/assets/js/login.js"></script>
+
+
+        <!-- Base Stylesheet -->
+        <link href="/assets/css/base.css" media="all" rel="stylesheet" type="text/css">
+
+        <!-- Document Stylesheet -->
+        <link href="/assets/css/login.css" media="all" rel="stylesheet" type="text/css">
+        <link rel="icon" type="ico/x-ico" href="/img/ico/favicon.ico">
+	<title>Login | investNaira</title>
 </head>
 <body>
-<div class="container">
-<div class="col-sm-6 col-sm-offset-3">
+<!--/start-main-->
+<div class="main">
+	<div class="wrap">
+	<!--/start-topo-one-->
+	<div class="top-one">
+	<!--/start-login-->
 
-    <h1><span class="fa fa-sign-in"></span> Login</h1>
+	<div class="login-one">
+    <!-- <div class="shadow-clone"> -->
+	<div class="create-account"  style="">
+		<div class="login-head" style="margin-bottom: 4%;">
+					<h2>Sign in</h2>
+					<span class="line">
+						<span class="sub-line"></span>
+					</span>
+          <% if (message.length > 0) { %>
+              <div class="alert alert-danger"><%= message %></div>
+          <% } %>
 
-    <% if (message.length > 0) { %>
-        <div class="alert alert-danger"><%= message %></div>
-    <% } %>
+			</div>
+			<form action="/login" method="post" style="overflow: hidden;">
 
-    <!-- LOGIN FORM -->
-    <form action="/login" method="post">
-        <div class="form-group">
-            <label>Email</label>
-            <input type="text" class="form-control" name="email">
+       <div class="span_up">
+        <a href="/auth/facebook" class="fa fa-facebook" style="color: #3b5998;"></a>
+        <a href="/auth/twitter" class="fa fa-twitter" style="color: #1DA1F2;"></a>
+        <a href="/auth/google" class="fa fa-google-plus" style="color: #d34836;"></a>
+        <p>OR</p>
         </div>
-        <div class="form-group">
-            <label>Password</label>
-            <input type="password" class="form-control" name="password">
+			<p>Email <lable>*</lable></p>
+				<input type="text" class="text" name="email" style="    border-width: 1px;
+    border-style: solid;
+    border-color: transparent transparent rgb(0, 166, 90);
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image: none;">
+    <p>Password <lable>*</lable></p>
+				<input type="password" class="text" name="password" style="    border-width: 1px;
+    border-style: solid;
+    border-color: transparent transparent rgb(0, 166, 90);
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image: none;">
+
+    <span class="sign-up" style="margin-bottom: 3%;display: block;">
+    	<input type="submit" class="" value="login" style="    float: left;
+    background: #e2e5e2;
+    padding: 0.7em 1.4em;
+    color: #3B3B3B;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    font-size: 1.1em;
+    transition: 0.1s all;
+    -webkit-transition: 0.1s all;
+    -moz-transition: 0.1s all;
+    -o-transition: 0.1s all;
+    cursor: pointer;
+">
+    </span>
+
+			</form>
+            <div class="clear">
+        <h5> You don't have an account yet ? <a  class="signup play-icon popup-with-zoom-anim" href="/signup">Signup</a></h5>
         </div>
-
-        <button type="submit" class="btn btn-warning btn-lg">Login</button>
-    </form>
-
-    <hr>
-
-    <p>Need an account? <a href="/signup">Signup</a></p>
-    <p>Or go <a href="/">home</a>.</p>
-
-    <div class="text-center">
-        <p>A demo by <a href="http://scotch.io">Scotch</a>.</p>
-        <p>Visit the <a href="http://scotch.io/tutorials/javascript/easy-node-authentication-setup-and-local">tutorial</a>.</p>
+	<!-- </div> -->
     </div>
 
+
+	</div>
+	</div>
+
+		</div>
+	</div>
 </div>
-</div>
+	</div>
+	<!--//end-copyright-->
 </body>
 </html>

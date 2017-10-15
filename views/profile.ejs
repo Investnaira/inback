@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-    <title>Node Authentication</title>
+    <title>InvestNaira</title>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
     <style>
@@ -12,7 +12,8 @@
 <div class="container">
 
     <div class="page-header text-center">
-        <h1><span class="fa fa-anchor"></span> Profile Page</h1>
+        <h1> Profile Page</h1>
+        <a href="/dashboard" class="btn btn-default btn-sm">Back to dashboard</a>
         <a href="/logout" class="btn btn-default btn-sm">Logout</a>
     </div>
 
@@ -25,11 +26,11 @@
 
                 <% if (user.local.email) { %>
                     <p>
-                        <strong>id</strong>: <%= user._id %><br>
+                        <!-- <strong>id</strong>: <%= user._id %><br> -->
                         <strong>email</strong>: <%= user.local.email %><br>
-                        <strong>password</strong>: <%= user.local.password %>
+                        <!-- <strong>password</strong>: <%= user.local.password %> -->
                     </p>
-                    
+
                     <a href="/unlink/local" class="btn btn-default">Unlink</a>
                 <% } else { %>
                     <a href="/connect/local" class="btn btn-default">Connect Local</a>
@@ -46,8 +47,8 @@
                 <!-- check if the user has this token (is the user authenticated with this social account) -->
                 <% if (user.facebook.token) { %>
                     <p>
-                        <strong>id</strong>: <%= user.facebook.id %><br>
-                        <strong>token</strong>: <%= user.facebook.token %><br>
+                        <!-- <strong>id</strong>: <%= user.facebook.id %><br> -->
+                        <!-- <strong>token</strong>: <%= user.facebook.token %><br> -->
                         <strong>email</strong>: <%= user.facebook.email %><br>
                         <strong>name</strong>: <%= user.facebook.name %><br>
                     </p>
@@ -69,8 +70,8 @@
 
                 <% if (user.twitter.token) { %>
                     <p>
-                        <strong>id</strong>: <%= user.twitter.id %><br>
-                        <strong>token</strong>: <%= user.twitter.token %><br>
+                        <!-- <strong>id</strong>: <%= user.twitter.id %><br> -->
+                        <!-- <strong>token</strong>: <%= user.twitter.token %><br> -->
                         <strong>display name</strong>: <%= user.twitter.displayName %><br>
                         <strong>username</strong>: <%= user.twitter.username %>
                     </p>
@@ -83,8 +84,8 @@
             </div>
         </div>
 
-        <!-- GOOGLE INFORMATION -->
-        <div class="col-sm-6">
+        GOOGLE INFORMATION
+         <div class="col-sm-6">
             <div class="well">
                 <h3 class="text-danger"><span class="fa fa-google-plus"></span> Google+</h3>
 
@@ -94,7 +95,7 @@
                         <strong>token</strong>: <%= user.google.token %><br>
                         <strong>email</strong>: <%= user.google.email %><br>
                         <strong>name</strong>: <%= user.google.name %>
-                    </p>
+                    </p> -->
 
                     <a href="/unlink/google" class="btn btn-danger">Unlink</a>
                 <% } else { %>
@@ -105,10 +106,6 @@
         </div>
     </div>
 
-    <div class="text-center">
-        <p>A demo by <a href="http://scotch.io">Scotch</a>.</p>
-        <p>Visit the <a href="http://scotch.io/tutorials/javascript/easy-node-authentication-setup-and-local">tutorial</a>.</p>
-    </div>
 
 </div>
 </body>

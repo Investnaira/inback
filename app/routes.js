@@ -14,6 +14,35 @@ module.exports = function(app, passport) {
         });
     });
 
+    app.get('/dashboard', isLoggedIn, function(req, res) {
+        res.render('dashboard.ejs', {
+            user : req.user
+        });
+    });
+    app.get('/save', isLoggedIn, function(req, res) {
+        res.render('save.ejs', {
+            user : req.user
+        });
+    });
+    app.get('/invest', isLoggedIn, function(req, res) {
+        res.render('invest.ejs', {
+            user : req.user
+        });
+    });
+
+    app.get('/compound', isLoggedIn, function(req, res) {
+        res.render('compound.ejs', {
+            user : req.user
+        });
+    });
+    app.get('/pay', isLoggedIn, function(req, res) {
+      res.redirect('https://paystack.com/pay/indeposit');
+        });
+
+        app.get('/subscribe', isLoggedIn, function(req, res) {
+          res.redirect('https://paystack.com/pay/insubscribe');
+            });
+
     // LOGOUT ==============================
     app.get('/logout', function(req, res) {
         req.logout();
@@ -33,7 +62,7 @@ module.exports = function(app, passport) {
 
         // process the login form
         app.post('/login', passport.authenticate('local-login', {
-            successRedirect : '/profile', // redirect to the secure profile section
+            successRedirect : '/dashboard', // redirect to the secure profile section
             failureRedirect : '/login', // redirect back to the signup page if there is an error
             failureFlash : true // allow flash messages
         }));
@@ -46,7 +75,7 @@ module.exports = function(app, passport) {
 
         // process the signup form
         app.post('/signup', passport.authenticate('local-signup', {
-            successRedirect : '/profile', // redirect to the secure profile section
+            successRedirect : '/dashboard', // redirect to the secure profile section
             failureRedirect : '/signup', // redirect back to the signup page if there is an error
             failureFlash : true // allow flash messages
         }));
@@ -59,7 +88,7 @@ module.exports = function(app, passport) {
         // handle the callback after facebook has authenticated the user
         app.get('/auth/facebook/callback',
             passport.authenticate('facebook', {
-                successRedirect : '/profile',
+                successRedirect : '/dashboard',
                 failureRedirect : '/'
             }));
 
@@ -71,7 +100,7 @@ module.exports = function(app, passport) {
         // handle the callback after twitter has authenticated the user
         app.get('/auth/twitter/callback',
             passport.authenticate('twitter', {
-                successRedirect : '/profile',
+                successRedirect : '/dashboard',
                 failureRedirect : '/'
             }));
 
@@ -84,7 +113,7 @@ module.exports = function(app, passport) {
         // the callback after google has authenticated the user
         app.get('/auth/google/callback',
             passport.authenticate('google', {
-                successRedirect : '/profile',
+                successRedirect : '/dashboard',
                 failureRedirect : '/'
             }));
 
@@ -191,5 +220,5 @@ function isLoggedIn(req, res, next) {
     if (req.isAuthenticated())
         return next();
 
-    res.redirect('/');
+    res.redirect('/login');
 }

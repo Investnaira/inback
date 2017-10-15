@@ -1,33 +1,201 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Node Authentication</title>
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
-    <style>
-        body         { padding-top:80px; }
-    </style>
+  <!-- Google Tag Manager -->
+  <script:angry:function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WKK8BD9');</script>
+<!-- End Google Tag Manager -->
+  <meta name="google-site-verification" content="aba7V8vvNm5O5FsSpSgXgoJ9YTmf8eTJY7J8GDNaJpU" />
+    <!-- Document Character Encoding Metadata -->
+    <meta charset="UTF-8">
+
+    <!-- Document HTTP Equivalent Compatibility Metadata -->
+    <meta content="chrome=1, IE=Edge" http-equiv="X-UA-Compatible">
+
+    <!-- Document Viewport Metadata -->
+    <meta
+        content="
+            height=device-height,
+            initial-scale=1.0,
+            maximum-scale=2.0,
+            minimal-ui,
+            minimum-scale=0.1,
+            user-scalable=no,
+            width=device-width"
+        target-densitydpi="92dpi"
+        name="viewport">
+
+    <!-- Miscellaneous Metadata -->
+        <!-- Author -->
+        <meta content="Lapys Dev Team" name="author">
+
+    <!-- Stylesheets -->
+        <!-- LapysJS Stylesheet -->
+        <link href="assets/css/lapys.css" media="all" rel="stylesheet" type="text/css">
+        <!-- font awesome -->
+        <link href="assets/css/font-awesome.css" media="all" rel="stylesheet" type="text/css">
+
+        <!-- Base Stylesheet -->
+        <link href="assets/css/base.css" media="all" rel="stylesheet" type="text/css">
+
+        <!-- Document Stylesheet -->
+        <link href="assets/css/landing.css" media="all" rel="stylesheet" type="text/css">
+        <link rel="icon" type="ico/x-ico" href="img/ico/favicon.ico">
+
+
+    <!-- Document Title -->
+    <title> landing page </title>
 </head>
-<body>
-<div class="container">
-
-    <div class="jumbotron text-center">
-        <h1><span class="fa fa-lock"></span> Node Authentication</h1>
-
-        <p>Login or Register with:</p>
-
-        <a href="/login" class="btn btn-default"><span class="fa fa-user"></span> Local Login</a>
-        <a href="/signup" class="btn btn-default"><span class="fa fa-user"></span> Local Signup</a>
-        <a href="/auth/facebook" class="btn btn-primary"><span class="fa fa-facebook"></span> Facebook</a>
-        <a href="/auth/twitter" class="btn btn-info"><span class="fa fa-twitter"></span> Twitter</a>
-        <a href="/auth/google" class="btn btn-danger"><span class="fa fa-google-plus"></span> Google+</a>
-    </div>
-
-    <div class="text-center">
-        <p>A demo by <a href="http://scotch.io">Scotch</a>.</p>
-        <p>Visit the <a href="http://scotch.io/tutorials/javascript/easy-node-authentication-setup-and-local">tutorial</a>.</p>
-    </div>
-
+<body style="padding-top: 0;">
+  <!-- [Document Favicon] -->
+    <fav-icon src="assets/img/ico/favicon.ico"> </fav-icon>
+<div class="header">
+	<div class="logo_house"><img src="assets/img/png/brand2-invert.png"> </div>
+  <div class="logo_house_res"><img src="assets/img/ico/favicon.ico"></div>
+	<ul class="nav" id="hepp1">
+    <li class="active1"><a href="/">Home</a> </li>
+		<li><a href="#">Forum</a> </li>
+		<li><a href="http://www.investnaira.com">Blog</a> </li>
+		<li><a href="/dashboard">Dashboard</a> </li>
+		<li><a href="/profile">Profile</a> </li>
+	</ul>
+  <div class="beside_me" id="beside_me1" >
+  <span onclick="help()">&#x2630;</span>
 </div>
+<div class="beside_me" id="beside_me2" style="display: none;">
+  <span onclick="help2()">&#x2630;</span>
+</div>
+</div>
+
+<ul class="res_header" id="hepp2">
+  <li class="nicki" id="nicki"><a href="/">Home</a> </li>
+    <li class="nicki" id="nicki1"><a href="#">Forum</a> </li>
+    <li class="nicki" id="nicki2"><a href="#">Blog</a> </li>
+    <li class="nicki" id="nicki3"><a href="/dashboard">Dashboard</a> </li>
+    <li class="nicki" id="nicki4"><a href="#">Profile</a> </li>
+</ul>
+
+<div class="slide_cover">
+                <div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="img/second.jpg" style="width:100% ">
+    <div class="text_hus">
+      <div class="text"><h1>We teach you to save</h1>
+        <p>become financialy literate via articless podcasts and videos.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="img/third.jpg" style="width:100%">
+    <div class="text_hus">
+      <div class="text"><h1>We teach you to invest</h1><p>get the latest information on investments stocks bonds and cryptos</p> </div>
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="img/pexels-photo-302842.jpeg" style="width:100%">
+   <div class="text_hus">
+      <div class="text"><h1>Learn to compound your wealth</h1><p>join the largest investment community as you meet experts and learn about finance and investments</p> </div>
+    </div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center" class="dot_cov">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+     </div>
+
+    <!-- Scripts -->
+        <!-- LapysJS Script -->
+        <script type="text/javascript" src="assets/js/iye.js"></script>
+        <script data-enable="styleAttributes" language="javascript" src="assets/js/lapys.js" type="text/javascript"> </script>
+
+        <!-- Base Script -->
+        <script language="javascript" src="assets/js/base.js" type="text/javascript"> </script>
+
+        <!-- Document Script -->
+        <script language="javascript" src="assets/js/index.js" type="text/javascript"> </script>
+        <div class="dips">
+        <div class="dip_in"><p>most people earn but few peope save smartly<br>few invest, but fewer invest wisely<br>and only a minor group compound wealth.</p></div>
+
+
+        </div>
+        <div class="divide_main">
+        <div class="into_3">
+        <div class="felp"></div>
+        	<h4>save smartly</h4>
+        	become financialy literate via articless podcasts and videos.
+        	<a href="#" class="lead_away">visit naira sense</a>
+        </div>
+        <div class="into_3">
+        <div class="felp1"></div>
+        	<h4>invest wisely</h4>
+        	get the latest information on investments stocks bonds and cryptos
+        	<a href="#" class="lead_away">visit nairapedia</a>
+        </div>
+        <div class="into_3" style="margin-right: 0;">
+        <div class="felp2"></div>
+        	<h4>compound wealth</h4>
+        	join the largest investment community as you meet experts and learn about finance and investments
+        	<a href="#" class="lead_away">
+        		my dashboard
+        	</a>
+        </div>
+
+        </div>
+        <div class="dips1">
+        <div class="dip_in"><p>life is like a game of cards<br>but there can be only one winner and winning means having the right set of cards
+        </p></div></div>
+
+        <div class="footer">
+        <div class="foot_div">
+        	<h3>tag cloud</h3>
+        	<a href="#"><span class="tags_up"><i class="fa fa-chevron-right"></i>Forum</span></a><br />
+        	<a href="#"><span class="tags_up"><i class="fa fa-chevron-right"></i>Blog</span></a><br />
+        	<a href="/dashboard"><span class="tags_up"><i class="fa fa-chevron-right"></i>Dashboard</span></a><br />
+        	<span class="tags_up"><i class="fa fa-chevron-right"></i>Profile</span><br />
+        </div>
+         <!-- <div class="foot_div" style="width:23%;">
+         	<h3>get our montly newsletter</h3>
+         	<form class="type_in">
+         		<input type="email" name="email" placeholder="E-mail"
+         		style="width: 40%;" class="tips">
+         		<input type="submit" name="submit" value="submit" class="submit1" style="background-color: transparent;width: 30%;color: grey;display: inline-block;border:1px solid grey;">
+         	</form>
+         </div> -->
+          <div class="foot_div">
+          	<h3>contact us</h3>
+          	<span class="con_span">
+          	7, Solaru Street, Gbagada, Lagos<br />
+          	<i class="fa fa-phone"></i>:08099921766,08077522997
+          	</span>
+          </div>
+          <div class="foot_div">
+          	<h3>Social</h3>
+          	<div class="social_link">
+          		<span><i class="fa fa-twitter"></i> twitter</span><br>
+          	<span><i class="fa fa-facebook"></i> facebook</span><br />
+          	<span><i class="fa fa-instagram"></i> instagram</span><br />
+          	<span><i class="fa fa-google-plus"></i> google plus</span>
+          	</div>
+
+          </div>
+
+        </div>
+
+
 </body>
 </html>

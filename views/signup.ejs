@@ -1,48 +1,112 @@
-<!doctype html>
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Node Authentication</title>
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
-    <style>
-        body         { padding-top:80px; }
-    </style>
+<!-- Document Character Encoding Metadata -->
+    <meta charset="UTF-8">
+
+    <!-- Document HTTP Equivalent Compatibility Metadata -->
+    <meta content="chrome=1, IE=Edge" http-equiv="X-UA-Compatible">
+
+    <!-- Document Viewport Metadata -->
+    <meta
+        content="
+            height=device-height,
+            initial-scale=1.0,
+            maximum-scale=2.0,
+            minimal-ui,
+            minimum-scale=0.1,
+            user-scalable=no,
+            width=device-width"
+        target-densitydpi="92dpi"
+        name="viewport">
+
+    <!-- Miscellaneous Metadata -->
+        <!-- Author -->
+        <meta content="Lapys Dev Team" name="author">
+
+    <!-- Stylesheets -->
+        <!-- LapysJS Stylesheet -->
+       <!--  <link href="assets/css/lapys.css" media="all" rel="stylesheet" type="text/css"> -->
+        <!-- font awesome -->
+        <link href="assets/css/font-awesome.css" media="all" rel="stylesheet" type="text/css">
+        <!-- javascript -->
+        <script type="text/javascript" src="assets/js/iye.js"></script>
+        <script type="text/javascript" src="assets/js/login.js"></script>
+
+
+        <!-- Base Stylesheet -->
+        <link href="assets/css/base.css" media="all" rel="stylesheet" type="text/css">
+
+        <!-- Document Stylesheet -->
+        <link href="assets/css/login.css" media="all" rel="stylesheet" type="text/css">
+        <link rel="icon" type="ico/x-ico" href="img/ico/favicon.ico">
+	<title>Login | investNaira</title>
 </head>
 <body>
-<div class="container">
-<div class="col-sm-6 col-sm-offset-3">
+<!--/start-main-->
+<div class="main">
+	<div class="wrap">
+	<!--/start-topo-one-->
+	<div class="top-one">
+	<!--/start-login-->
+	<div class="login-one">
 
-    <h1><span class="fa fa-sign-in"></span> Signup</h1>
+		<div class="create-account" id="c-acc2">
+			<div class="login-head">
+					<h2>join us</h2>
+					<span class="line">
+						<span class="sub-line"></span>
+					</span>
 
+			</div>
+
+				<form action="/signup" method="post">
+          <div class="span_up">
+           <a href="/auth/facebook" class="fa fa-facebook" style="color: #3b5998;"></a>
+           <a href="/auth/twitter" class="fa fa-twitter" style="color: #1DA1F2;"></a>
+           <a href="/auth/google" class="fa fa-google-plus" style="color: #d34836;"></a>
+           <p>OR</p>
+           </div>
+					<!-- <p>First Name <lable> *</lable></p>
+					<input type="text" class="text"
+					style="border:1px transparent solid;border-bottom:#00A65A 1px solid; " value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" >
+					<p>Last Name <lable> *</lable></p>
+					<input type="text" class="text"
+					style="border:1px transparent solid;border-bottom:#00A65A 1px solid; " value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" > -->
+					<p>Email Address <lable> *</lable></p>
+					<input type="text" class="text" name="email"
+					style="border:1px transparent solid;border-bottom:#00A65A 1px solid; " value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" >
+					<p>Password <lable> *</lable></p>
+					<input type="password" value="" class="topa" name="password"
+		style="border:1px transparent solid;border-bottom:#00A65A 1px solid"; onfocus="this.value = '';" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+    <!-- <a href="/auth/facebook" class="decor"><span class="fa fa-facebook"></span> Facebook</a>
+    <a href="/auth/twitter" class="btn btn-info"><span class="fa fa-twitter"></span> Twitter</a>
+    <a href="/auth/google" class="btn btn-info"><span class="fa fa-google"></span>google</a> -->
     <% if (message.length > 0) { %>
         <div class="alert alert-danger"><%= message %></div>
     <% } %>
+				<div class="sign-up">
+					<input type="reset" value="clear">
+					<input type="submit"  value="signup" >
 
-    <!-- LOGIN FORM -->
-    <form action="/signup" method="post">
-        <div class="form-group">
-            <label>Email</label>
-            <input type="text" class="form-control" name="email">
-        </div>
-        <div class="form-group">
-            <label>Password</label>
-            <input type="password" class="form-control" name="password">
-        </div>
 
-        <button type="submit" class="btn btn-warning btn-lg">Signup</button>
-    </form>
+		</div>
+		</form>
+		<div class="clear"> </div>
+		<h5>Do you have an account yet ? <a  class="signup play-icon popup-with-zoom-anim" href="/login">Login</a></h5>
+	</div>
+	</div>
 
-    <hr>
-
-    <p>Already have an account? <a href="/login">Login</a></p>
-    <p>Or go <a href="/">home</a>.</p>
-
-    <div class="text-center">
-        <p>A demo by <a href="http://scotch.io">Scotch</a>.</p>
-        <p>Visit the <a href="http://scotch.io/tutorials/javascript/easy-node-authentication-setup-and-local">tutorial</a>.</p>
-    </div>
-
+		</div>
+	</div>
 </div>
-</div>
+	</div>
+	<!--//end-copyright-->
 </body>
 </html>
