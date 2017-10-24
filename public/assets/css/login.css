@@ -22,16 +22,19 @@ img{max-width:100%;}
 /*end reset*/
 /****-----start-body----****/
 body{
-	background:url("../img/png/bg.png") repeat;
+	/*background:url("../img/png/bg.png") repeat;*/
 	font-family: 'Roboto', sans-serif;
 
+}
+form{
+  padding-top: 0em !important;
 }
 .wrap{
 	margin: 0 auto;
 	width:80%;
 }
 .main {
-  margin: 6em 0px;
+  margin: auto 0px;
 }
 body a,form li,.submit input[type="submit"]{
 	transition: 0.1s all;
@@ -44,7 +47,7 @@ body a,form li,.submit input[type="submit"]{
 }
 /*---login---------*/
 .create-account {
-  background: url("../img/png/bg.png")0px 0px no-repeat;
+  /*background: url("../img/png/bg.png")0px 0px no-repeat;*/
   display: block;
   width:38%;
   height: 60%;
@@ -57,6 +60,25 @@ body a,form li,.submit input[type="submit"]{
 
 
 }
+input[value="login"]{
+  -moz-transition:all.5s ease-in-out !important;
+  -o-transition:all.5s ease-in-out !important;
+  -ms-transition:all.5s ease-in-out !important;
+  -webkit-transition:all.5s ease-in-out !important;
+  transition:all.5s ease-in-out !important;
+  text-align: center;
+  margin: auto;
+  border:1px dotted transparent !important;
+  display: block;
+
+}
+input[class="text"],input[class="topa"]{
+  color: #333 !important;
+}
+input[value="login"]:hover{
+  background-color: transparent !important;
+  border: 1px dotted #00A65A !important;
+}
 .text{
   -moz-transition:all.5s ease-in-out;
   -o-transition:all.5s ease-in-out;
@@ -64,16 +86,32 @@ body a,form li,.submit input[type="submit"]{
   -webkit-transition:all.5s ease-in-out;
   transition:all.5s ease-in-out;
 }
+.topa:hover {
+    box-shadow: 0px 0px 10px #00a65a;
+    border: 1px solid #828282 !important;
+    border-radius: 2px;
+}
+.image_house{
+  width: 100%;
+  display: block;
+  margin: auto;
+  height: auto;
+  text-align: center;
+}
+.image_house_pic{
+ width: 15%;
+ text-align: center;
+}
 .create-account:hover{
-  box-shadow: 0px 0px 70px #000000
+ /* box-shadow: 0px 0px 10px #000000
+  ;
+ */
+}
+/*.create-account:focus{
+  box-shadow: 0px 0px 10px #000000
   ;
  
-}
-.create-account:focus{
-  box-shadow: 0px 0px 70px #000000
-  ;
- 
-}
+}*/
 .clear h6{
   color: #f0f0f0;
   margin: auto;
@@ -90,7 +128,7 @@ body a,form li,.submit input[type="submit"]{
 .span_up a{
   margin: auto;
   margin-left: 2%;
-  font-size: 3em;
+  font-size: 2em;
   cursor: pointer;
   -moz-transition:all.5s ease-in-out;
   -o-transition:all.5s ease-in-out;
@@ -98,10 +136,19 @@ body a,form li,.submit input[type="submit"]{
   -webkit-transition:all.5s ease-in-out;
   transition:all.5s ease-in-out;
 }
-.span_up a:hover{
+/*.span_up a:hover{
  transform:rotateY(360deg);
  margin: auto;
   margin-left: 2%;
+}*/
+.span_up_circle{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+ /* padding: .5em;*/
+  border:1px solid #333;
+  /*padding-left: .7em;
+  padding-right: .7em;*/
 }
 .topa{
   -moz-transition:all.5s ease-in-out;
@@ -117,6 +164,8 @@ body a,form li,.submit input[type="submit"]{
 }
 .text:hover{
   box-shadow: 0px 0px 10px #00a65a;
+  border: 1px solid #828282 !important;
+  border-radius: 2px;
 }
 .text:focus{
   box-shadow: 0px 0px 10px #00a65a;
@@ -125,15 +174,16 @@ body a,form li,.submit input[type="submit"]{
   color:#ed1c2f;
 }
 .login-head {
-  padding: 3em 0em 0 2em;
+  padding: 1em 0em 0 2em;
   text-align: left;
 }
 .login-head h2 {
   font-size: 1.4em;
 color: #fff;
-font-weight: 400;
+font-weight: 300;
 text-transform: uppercase;
-font-family: 'Copse', serif;
+font-family: sans-serif;
+color: #576f7f;
 }
 span.line{
   width: 92%;
@@ -154,11 +204,12 @@ span.sub-line{
   
 }
 .create-account p {
-  font-size: 1.1em;
+  font-size: 1em;
   color: #fff;
   padding: 1em 0;
   font-weight: 400;
-  font-family: 'Copse', serif;
+  font-family: sans-serif;
+  color: #828282;
 }
 .login-head h1 {
 font-size: 2em;
@@ -169,7 +220,7 @@ font-family: 'Copse', serif;
 form {
   padding: 1em 2em 0.3em 2em;
 }
-.create-account input[type="text"],.create-account input[type="password"] {
+.create-account input[type="text"],.create-account input[type="password"],.create-account input[type="email"] {
 	width: 93%;
   padding: 0.8em 0.8em;
   color: #fff;
@@ -186,8 +237,9 @@ form {
 }
 .create-account h5 {
   text-align: center;
-  padding: 2em 0 3em 0;
-  color: #fff;
+  padding: .5em 0 1em 0;
+  color: #576f7f;
+  font-weight: lighter;
   font-size:1em;
 }
 .create-account h5 a{
@@ -334,6 +386,8 @@ color: #000;
 .sign-up {
   padding: 1em 0em 3.7em 0;
   border-bottom: 1px dotted #00a65a;
+  text-align: center;
+  margin: auto;
 }
 .sign-up input[type="reset"] {
   float: left;
@@ -355,21 +409,27 @@ color: #000;
   -webkit-transition: 0.5s all ease-in-out;
   -moz-transition: 0.5s all ease-in-out;
   -o-transition: 0.5s all ease-in-out;
-  padding-top: 5%;
+  padding-top: 3%;
   padding-bottom: 5%;
 }
 .create-account:hover {
-  box-shadow: 0px 0px 30px #000;
+  box-shadow: 0px 0px 10px #00A65A;
+   border: 1px solid transparent;
+}
+.create-account{
+  border: 1px solid #00A65A;
 }
 
 .sign-up input[type="reset"]:hover {
    background: #00a65a;
    color: #e2e5e2;
 }
-
+input[type="text"]{
+  color: #333;
+}
 
 .sign-up input[type="submit"] {
-  float: right;
+  float: right !important;
   background: #00a65a;
   padding: 0.7em 1.5em;
   color: #e2e5e2;
@@ -409,7 +469,7 @@ color: #000;
 /*-----start-responsive-design------*/
   @media (max-width:1440px){
     .create-account {
-    background: url("../img/png/bg.png")0px 0px no-repeat;
+    /*background: url("../img/png/bg.png")0px 0px no-repeat;*/
     display: block;
     width: 40%;
     height: 60%;
@@ -429,7 +489,7 @@ color: #000;
     span.line{
     width: 92%;
     height: 1px;
-    background: #e6e6e6;
+    background: #828282;
     margin: 0 auto;
     position: relative;
     display: inline-block;
@@ -447,7 +507,7 @@ color: #000;
 }
 @media (max-width:1280px){
   .create-account {
-  background: url("../img/png/bg.png")0px 0px no-repeat;
+  /*background: url("../img/png/bg.png")0px 0px no-repeat;*/
   display: block;
   width: 48%;
   height: 60%;
@@ -462,7 +522,7 @@ color: #000;
 }
 @media (max-width:1024px){
     .create-account {
-    background: url("../img/png/bg.png")0px 0px no-repeat;
+    /*background: url("../img/png/bg.png")0px 0px no-repeat;*/
     display: block;
     width: 55%;
     height: 60%;
@@ -480,7 +540,7 @@ color: #000;
 }
 @media (max-width:768px){
   .create-account {
-  background: url("../img/png/bg.png")0px 0px no-repeat;
+  /*background: url("../img/png/bg.png")0px 0px no-repeat;*/
   display: block;
   width: 79%;
   height: 60%;
@@ -495,7 +555,7 @@ color: #000;
 }
 @media (max-width:640px){
     .create-account {
-    background: url("../img/png/bg.png")0px 0px no-repeat;
+    /*background: url("../img/png/bg.png")0px 0px no-repeat;*/
     display: block;
     width: 90%;
     height: 60%;
@@ -510,7 +570,7 @@ color: #000;
 }
 @media (max-width:480px){
     .create-account {
-    background: url("../img/png/bg.png")0px 0px no-repeat;
+   /* background: url("../img/png/bg.png")0px 0px no-repeat;*/
     display: block;
     width: 101%;
     height: 60%;
@@ -544,7 +604,7 @@ color: #000;
   }
   .create-account p {
     font-size: 0.9em;
-    padding: 0.6em 0;
+    padding: 0.5em 0;
   }
   a.sign-left{
     padding: 0.5em 1em;

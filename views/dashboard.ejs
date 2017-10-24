@@ -48,7 +48,7 @@
 		<li><a href="#">Forum</a> </li>
 		<li><a href="http://www.investnaira.com">Blog</a> </li>
 		<li class="active1"><a href="/dashboard">Dashboard</a> </li>
-		<li><a href="/profile">Profile</a> </li>
+	<li><a href="/strategy">Our Strategy</a> </li>
 	</ul>
 	<div class="beside_me">
   &#x2630;
@@ -57,11 +57,11 @@
 <div class="sec_pho">
 	<div class="header2">
 		<ul class="nav2">
-		<li><a href="/dashboard"><i class="fa fa-th"></i> overview</a></li>
-			<li><a href="/save"><i class="fa fa-send"></i> save</li>
-			<li><a href="/invest"><i class="fa fa-money"></i> invest</li>
-			<li><a href="/compound"><i class="fa fa-bar-chart"></i> compound wealth</a></li>
-			<li><a href="/invite"><i class="fa fa-users"></i> invite friends</a></li>
+		<li><a href="/dashboard"><i class="fa fa-th"></i> Overview</a></li>
+			<li><a href="/save"><i class="fa fa-send"></i> Save</li>
+			<li><a href="/invest"><i class="fa fa-money"></i> Invest</li>
+			<li><a href="/compound"><i class="fa fa-bar-chart"></i> Compound Wealth</a></li>
+			<li><a href="/logout"><i class="fa fa-sign-out "></i> Logout</a></li>
 
 		</ul>
 
@@ -81,11 +81,11 @@
 		<div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <ul class="nav3">
-		<li><a href="/dashboard"><i class="fa fa-th"></i> overview</a></li>
-			<li><a href="/save"><i class="fa fa-send"></i> save</li>
-			<li><a href="/invest"><i class="fa fa-money"></i> invest</li>
-			<li><a href="/compound"><i class="fa fa-bar-chart"></i> compound wealth</a></li>
-			<li><a href="/invite"><i class="fa fa-users"></i> invite friends</a></li>
+    <li><a href="/dashboard"><i class="fa fa-th"></i> Overview</a></li>
+			<li><a href="/save"><i class="fa fa-send"></i> Save</li>
+			<li><a href="/invest"><i class="fa fa-money"></i> Invest</li>
+			<li><a href="/compound"><i class="fa fa-bar-chart"></i> Compound Wealth</a></li>
+			<li><a href="/logout"><i class="fa fa-sign-out "></i> Logout</a></li>
 
 		</ul>
 </div>
@@ -119,11 +119,8 @@
          <strong>Email</strong>: <%= user.local.email %><br>
          <!-- <strong>password</strong>: <%= user.local.password %> -->
      </p>
-
-     <a href="/unlink/local" class="signup play-icon popup-with-zoom-anim">Unlink</a>
- <% } else { %>
-     <a href="/connect/local" class="signup play-icon popup-with-zoom-anim">Connect Email</a>
  <% } %>
+
 
  <% if (user.facebook.token) { %>
      <p>
@@ -134,10 +131,8 @@
          <strong>email</strong>: <%= user.facebook.email %><br>
      </p>
 
-     <a href="/unlink/facebook" class="signup play-icon popup-with-zoom-anim">Unlink</a>
- <% } else { %>
-     <br><a href="/connect/facebook" class="signup play-icon popup-with-zoom-anim">Connect Facebook</a><br>
- <% } %>
+    <br>
+ <% }  %>
 
  <% if (user.twitter.token) { %>
      <p>
@@ -147,11 +142,8 @@
          <strong>username</strong>: <%= user.twitter.username %> <br>
          <strong>display name</strong>: <%= user.twitter.displayName %><br>
      </p>
-
-     <a href="/unlink/twitter" class="signup play-icon popup-with-zoom-anim">Unlink</a>
- <% } else { %>
-     <a href="/connect/twitter" class="signup play-icon popup-with-zoom-anim">Connect Twitter</a><br>
  <% } %>
+
 
  <% if (user.google.token) { %>
      <p>
@@ -162,13 +154,11 @@
          <strong>display name</strong>: <%= user.twitter.displayName %><br>
      </p>
 
-     <a href="/unlink/twitter" class="signup play-icon popup-with-zoom-anim">Unlink</a>
- <% } else { %>
-     <a href="/connect/twitter" class="signup play-icon popup-with-zoom-anim">Connect Twitter</a><br>
  <% } %>
 
+
 <br>
-      <span style="text-transform: capitalize;color:#00a65a;"><a href="/logout">Logout <i class="fa fa-arrow-right"></i></a></span>
+      <span style="text-transform: capitalize;color:#00a65a;"><a href="/profile">Manage Account <i class="fa fa-arrow-right"></i></a></span>
 		</div>
 		<div class="overview1">
 			<span class="head1" style="text-transform: capitalize;">transactions</span>
@@ -183,10 +173,10 @@
 
       <% user.transaction.forEach(function(transaction){ %>
         <tr>
-  <td>  <%- transaction.date %></td>
-  <td>  <%- transaction.description %></span></td>
-  <td>  &#x20A6;  <%- transaction.amount %> <sup>.00 k</sup></td>
-  <td>  &#x20A6;  <%- transaction.balance %><sup>.00 k</sup></td>
+  <td><%- transaction.date %></td>
+  <td><%- transaction.description %></span></td>
+  <td>&#x20A6;<%- transaction.amount %><sup>.00 k</sup></td>
+  <td>&#x20A6;<%- transaction.balance %><sup>.00 k</sup></td>
 </tr>
 </table>
              <%});%>

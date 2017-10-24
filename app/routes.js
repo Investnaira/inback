@@ -3,8 +3,24 @@ module.exports = function(app, passport) {
 // normal routes ===============================================================
 
     // show the home page (will also have our login links)
+
     app.get('/', function(req, res) {
-        res.render('index.ejs');
+      res.render('index.ejs');
+    });
+
+    app.get('/faq', function(req, res) {
+        res.render('faq.ejs');
+    });
+
+    app.get('/terms', function(req, res) {
+        res.render('terms.ejs');
+    });
+
+    app.get('/privacy', function(req, res) {
+        res.render('privacy.ejs');
+    });
+    app.get('/strategy', function(req, res) {
+        res.render('strategy.ejs');
     });
 
     // PROFILE SECTION =========================

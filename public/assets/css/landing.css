@@ -41,6 +41,71 @@ a{
 	-ms-transition: all 1.75s ease-in-out;
 	-webkit-transition: all 1.75s ease-in-out;
 }
+.dive_in_three{
+	display: block;
+	margin:auto;
+	padding-top: 30%;
+	width:100%;
+	height: 100%;
+	padding:27em;
+	padding-top: 13em;
+	padding-left: 0em;
+	background-image: url(http://res.cloudinary.com/investnaira/image/upload/v1508304905/second_fkkkew.jpg);
+	background-attachment: fixed;
+
+
+}
+.join_but{
+	display: block;
+	width: 20%;
+	border: 1px solid #fff;
+	margin: auto;
+	margin-top: 4%;
+	font-size: 1.4em;
+	font-weight: 500;
+	text-align: center;
+	padding:.3em;
+	color: #fff;
+	text-transform: capitalize;
+	cursor: pointer;
+	transition: all 0.75s ease-in-out;
+	-moz-transition: all 0.75s ease-in-out;
+	-o-transition: all 0.75s ease-in-out;
+	-ms-transition: all 0.75s ease-in-out;
+	-webkit-transition: all 0.75s ease-in-out;
+}
+.join_but:hover{
+	background-color: #00A65A;
+	border:1px solid #00A65A;
+}
+.slide_cover h2{
+	margin:auto;
+	color: rgb(255,255, 255);
+	text-align: center;
+	padding: 1em;
+	padding-bottom: .2em;
+	text-transform: capitalize;
+}
+.slide_cover h3{
+	margin:auto;
+	color: rgb(255,255, 255);
+	text-align: center;
+	padding-bottom: 2em;
+	text-transform: capitalize;
+	font-size: 1.8em;
+}
+.dip_in_out{
+	text-align: center;
+	background-color: rgb(255,255,255);
+	width: 45%;
+	margin: auto;
+	padding: 1em;
+	text-transform: capitalize;
+	font-weight: 500;
+	font-size: 1.4em;
+	color: #00A65A;
+	box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .3);
+}
 .share_article a{
 	width: 100%;
 	font-size: 1.5em;
@@ -146,7 +211,7 @@ a{
 	transform: rotate(90deg);
 	padding-top: 0;
 
-	
+
 }
 .carousel{
 	margin-top: 10%;
@@ -211,7 +276,7 @@ text-align: center;
 	width :90.43% !important;
 	height: 30%;
 	background-color: #CCCCCC;
-	background-image:url(../img/png/cards-jass-cards-card-game-strategy-39018.jpeg);
+	background-image:url(http://res.cloudinary.com/investnaira/image/upload/v1508304913/third_gtxlxz.jpg);
 	padding: 4em 2em;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -244,14 +309,14 @@ text-align: center;
 	display: inline-block;
 	margin-right: 8%;
 	text-align: center;
-	overflow: hidden;	
+	overflow: hidden;
 	box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .3);
 	border-top-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 	margin-bottom: 4%;
 }
 .felp{
-	background-image: url(../img/png/business-money-pink-coins.jpg);
+	background-image: url(http://res.cloudinary.com/investnaira/image/upload/c_scale,w_1980/v1508866857/business-money-pink-coins_o4loxr.jpg);
 	background-size: contain;
 	background-repeat: no-repeat;
 	text-align: center;
@@ -267,7 +332,7 @@ text-align: center;
 	overflow: hidden;
 }
 .felp1{
-	background-image: url(../img/png/pexels-photo-186461.jpeg);
+	background-image: url(http://res.cloudinary.com/investnaira/image/upload/c_scale,w_1980/v1508866695/pexels-photo-210607_e8y8bp.jpg);
 	background-size: contain;
 	background-repeat: no-repeat;
 	text-align: center;
@@ -282,7 +347,7 @@ text-align: center;
 	-webkit-transition: all .35s ease-in-out;
 }
 .felp2{
-	background-image: url(../img/png/pexels-photo-302842.jpeg);
+	background-image: url(http://res.cloudinary.com/investnaira/image/upload/c_scale,w_1980/v1508866692/pexels-photo-186461_hbezpw.jpg);
 	background-size: contain;
 	background-repeat: no-repeat;
 	text-align: center;
@@ -299,17 +364,17 @@ text-align: center;
 .felp:hover{
 	transform: scale(1.5,1.5);
 	cursor: pointer;
-	
+
 }
 .felp1:hover{
 	transform: scale(1.5,1.5);
 	cursor: pointer;
-	
+
 }
 .felp2:hover{
 	transform: scale(1.5,1.5);
 	cursor: pointer;
-	
+
 }
 .lead_away{
 	width: 80%;
@@ -327,7 +392,7 @@ text-align: center;
 	-ms-transition: all .35s ease-in-out;
 	-webkit-transition: all .35s ease-in-out;
 	border: 1px solid transparent;
-	text-transform: capitalize; 
+	text-transform: capitalize;
 }
 .lead_away:hover{
 	background-color: #ffffff;
@@ -354,7 +419,7 @@ text-align: center;
 }
 .social_link{
 	color: grey;
-	font-family: 
+	font-family:
 }
 .social_link i{
 	margin-bottom: 3%;
@@ -576,7 +641,7 @@ border-bottom: 1px solid #00A65A;
 	cursor: pointer;
 	top: 0;
 	left: 0;
-} 
+}
 .video_blog_protect{
 	padding: 2em 2%;
 }
@@ -695,7 +760,7 @@ border-bottom: 1px solid #00A65A;
 	height: 20%;
 	text-align: center;
 	background-image: url(../img/png/image.png);
-	
+
 }
 .active2{
 	cursor: pointer!important;
@@ -735,6 +800,24 @@ border-bottom: 1px solid #00A65A;
 	-webkit-transition: .35s all ease-in-out;
 	-o-transition: .35s all ease-in-out;
 }
+.center_me button{
+	width: 15%;
+	height: auto;
+	border: 1px solid #282828;
+	background-color: transparent;
+	color: #282828;
+	/*box-shadow: 0px 3px 3px 0px #282828;*/
+	padding: .5%;
+	transition: .35s all ease-in-out;
+	-moz-transition: .35s all ease-in-out;
+	-ms-transition: .35s all ease-in-out;
+	-webkit-transition: .35s all ease-in-out;
+	-o-transition: .35s all ease-in-out;
+}
+.center_me button:hover{
+	background-color: #333;
+	color: #00A65A;
+}
 .opa_pro_level{
 	opacity:0;
 	transition: .35s all ease-in-out;
@@ -759,17 +842,17 @@ border-bottom: 1px solid #00A65A;
 
 a.agilebtn {
     font-size: 1em;
-    color: rgb(0, 166, 90); 
+    color: rgb(0, 166, 90);
     padding: 0.7em 2em;
-    display: inline-block; 
+    display: inline-block;
 	outline:none;
-	margin-top: 1em; 
+	margin-top: 1em;
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	transition: all 0.5s;
 	position: relative;
-} 
+}
 .a.agilebtn:hover{
 	color: rgb(0, 166, 90);
 
@@ -830,11 +913,11 @@ a.agilebtn {
 }
 .company_case{
 	height: auto;
-	width: 40%; 
+	width: 40%;
 	display: inline-block;
 	float: left;
 	margin: 3% 7% 3% 3%;
-	
+
 }
 .company_case h2{
 	text-transform: capitalize;
@@ -847,11 +930,16 @@ a.agilebtn {
 	display: inline-block;
 	margin-left: 2%;
 	margin-right: 2%;
-	box-shadow: 0px 3px 3px 0px #282828;
+	box-shadow: 0px 40px 20px -40px #858585;;
 }
 .div_pad_three h4{
 	text-transform: uppercase;
 	font-size: 1.3em;
+}
+.div_pad_three h3{
+	text-transform: uppercase;
+	font-size: 1.5em;
+	text-align: center;
 }
 .spin_me_side{
 	width: 50%;
@@ -881,7 +969,7 @@ a.agilebtn {
 	width: 80%;
 	background-color: #00A65A;
 	border-color: solid;
-	
+
 }
 .company_sum_wrap{
 	background-color: #fff;
@@ -996,7 +1084,7 @@ a.agilebtn {
 }
 .sub_1:hover{
 		box-shadow: 0px 0px 10px #00A65A;
- 
+
 }
 .forgot_password{
 	font-size: 1.8em;
@@ -1079,7 +1167,7 @@ a.agilebtn {
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
-} 
+}
 
 
 
@@ -1096,6 +1184,7 @@ a.agilebtn {
 
 .mySlides {
     display: none;
+    position: relative;
 }
 
 /* Next & previous buttons */
@@ -1203,7 +1292,7 @@ a.agilebtn {
 	opacity: 0;
 	transition: all .35s ease-in-out;
 	padding-left: 3%;
-	
+
 
 }
 .nicki{
@@ -1215,17 +1304,17 @@ a.agilebtn {
 
 
 @-webkit-keyframes fade {
-  from {opacity: 0} 
-  to {opacity: 1}
+  from {left: -100}
+  to {left: 0}
 }
 
 @keyframes fade {
-  from {opacity: 0} 
-  to {opacity: 1}
+  from {left: -100}
+  to {left: 0}
 }
 @media(max-width: 1280px){
 	.prev{
-		font-size: .8em;	
+		font-size: .8em;
 		padding: 2%;
 	}
 	.nav3{
@@ -1272,6 +1361,17 @@ a.agilebtn {
     background-color: #fff;
     height: 7.7%;
 }
+.div_pad_three{
+	width: 100%;
+	display: block;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+.center_me button{
+	width: 100%;
+	display: block;
+	margin-bottom: 1%;
+}
 }
 @media(max-width: 880px){
 	.header{
@@ -1279,6 +1379,17 @@ a.agilebtn {
 		height: 8%;
 		background-color: #282828;
 		box-shadow: 0px 0px 0px transparent;
+	}
+	.div_pad_three{
+		width: 100%;
+		display: block;
+		margin-top: 2%;
+		margin-bottom: 2%;
+	}
+	.center_me button{
+		width: 100%;
+		display: block;
+		margin-bottom: 1%;
 	}
 	.nav3{
 		display: block;
@@ -1316,7 +1427,7 @@ a.agilebtn {
 		width: 100%;
 	}
 	.prev{
-		font-size: 1em;	
+		font-size: 1em;
 		padding: 3%;
 	}
 	.next{
@@ -1428,6 +1539,17 @@ a.agilebtn {
 	.logo_house{
 		display: none;
 	}
+	.div_pad_three{
+		width: 100%;
+		display: block;
+		margin-top: 2%;
+		margin-bottom: 2%;
+	}
+	.center_me button{
+		width: 100%;
+		display: block;
+		margin-bottom: 1%;
+	}
 
 	.logo_house_res{
 	display: inline-block;
@@ -1462,7 +1584,7 @@ a.agilebtn {
 		width: 100%;
 	}
 	.prev{
-		font-size: 1em;	
+		font-size: 1em;
 		padding: 3%;
 	}
 	.next{
@@ -1570,6 +1692,17 @@ a.agilebtn {
 		background-color: #282828;
 		box-shadow: 0px 0px 0px transparent;
 	}
+	.div_pad_three{
+		width: 100%;
+		display: block;
+		margin-top: 2%;
+		margin-bottom: 2%;
+	}
+	.center_me button{
+		width: 100%;
+		display: block;
+		margin-bottom: 1%;
+	}
 	.main_cont_blg h1{
 		padding-top: 25%;
 	}
@@ -1620,7 +1753,7 @@ a.agilebtn {
 		width: 100%;
 	}
 	.prev{
-		font-size: 1em;	
+		font-size: 1em;
 		padding: 3%;
 	}
 	.next{
@@ -1774,7 +1907,7 @@ a.agilebtn {
 .logo_house_res img{
 	width: 40%;
 }
-	
+
 	.nav{
 		display: none;
 	}
@@ -1796,7 +1929,7 @@ a.agilebtn {
 		width: 100%;
 	}
 	.prev{
-		font-size: 1em;	
+		font-size: 1em;
 		padding: 3%;
 	}
 	.next{
@@ -1898,6 +2031,17 @@ a.agilebtn {
 		margin-top: 1%;
 		height: 9.7%;
 	}
+	div_pad_three{
+		width: 100%;
+		display: block;
+		margin-top: 2%;
+		margin-bottom: 2%;
+	}
+	.center_me button{
+		width: 100%;
+		display: block;
+		margin-bottom: 1%;
+	}
 }
 @media(max-width: 300px)
 {
@@ -1967,7 +2111,7 @@ a.agilebtn {
 		width: 100%;
 	}
 	.prev{
-		font-size: 1em;	
+		font-size: 1em;
 		padding: 3%;
 	}
 	.next{
@@ -1996,7 +2140,7 @@ a.agilebtn {
 	}
 	.nav3{
 		display: block;
-	} 
+	}
 	.foot_div h3{
 		width: 100%;
 	}
@@ -2052,32 +2196,15 @@ a.agilebtn {
 	.people_profile_block{
 		padding-top: 30% !important;
 	}
+	.div_pad_three{
+		width: 100%;
+		display: block;
+		margin-top: 2%;
+		margin-bottom: 2%;
+	}
+	.center_me button{
+		width: 100%;
+		display: block;
+		margin-bottom: 1%;
+	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
