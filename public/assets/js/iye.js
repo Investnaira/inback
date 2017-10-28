@@ -13,15 +13,15 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1} 
+  if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"; 
+      slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block"; 
+  slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
 
@@ -36,11 +36,11 @@ function showSlides() {
     var i;
     var slides = document.getElementsByClassName("mySlides");
     for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none"; 
+        slides[i].style.display = "none";
     }
     slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1} 
-    slides[slideIndex-1].style.display = "block"; 
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
     setTimeout(showSlides, 5000); // Change image every 5 seconds
 }
 
@@ -60,9 +60,9 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft = "0";
     document.body.style.backgroundColor = "white";
-} 
+}
 // this is the code for the responsivity header
-//well it's pretty basic for the perfect understanding 
+//well it's pretty basic for the perfect understanding
 // i'm still working on it so..... enjoy
 // one guy was arguying with me that you need jquery for this
 // well guess what i'm jquery !!!!! Ha Ha.......
@@ -78,7 +78,7 @@ function closeNav() {
         document.getElementById("nicki2").style.display="block";
          document.getElementById("nicki3").style.display="block";
           document.getElementById("nick4").style.display="block";
-      
+
 
     }
     function help2(){
@@ -99,3 +99,14 @@ function closeNav() {
       document.getElementById("share_article").style.left="0%";
       document.getElementById("share_article").style.opacity="1";
     }
+
+
+    function openDeposit()
+{
+window.open('https://paystack.com/pay/indeposit','jav','width=400,height=500,resizable=yes'); 
+}
+
+function openSubscribe()
+{
+window.open('https://paystack.com/pay/insubscribe','jav','width=400,height=500,resizable=yes');
+}
