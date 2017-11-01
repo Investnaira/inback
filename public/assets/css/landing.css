@@ -924,13 +924,19 @@ a.agilebtn {
 	font-weight: 400;
 }
 .div_pad_three{
-	width: 18%;
+	width: 90%;
 	background-color: #fff;
 	padding: 1%;
-	display: inline-block;
+	display: block;
 	margin-left: 2%;
 	margin-right: 2%;
-	box-shadow: 0px 40px 20px -40px #858585;;
+	box-shadow: 0px 40px 20px -40px #858585;
+	margin-top: 2%;
+	margin-bottom:2%;
+}
+.div_pad_three p{
+text-align: left;
+
 }
 .div_pad_three h4{
 	text-transform: uppercase;

@@ -68,6 +68,34 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</span>
 
 			</div>
+      <script language="javascript">
+
+    // function checkEmail() {
+    //
+    //     var email = document.getElementById('email');
+    //     var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    //
+    //     if (!filter.test(email.value)) {
+    //     var wrongemail=('Please provide a valid email address');
+    //     email.focus;
+    //     return false;
+    //  }
+    // }
+
+      // var email=('fajimiiyeoluwa@yahoo.com');
+      //
+      // var subject = ('email authentication');
+      //
+      // var body = ('this mail is just to confirm that the email given to us is actually valid');
+      //
+      // document.write( '<a href="mailto:' + email +
+      //
+      // '?subject=' +subject+
+      //
+      // '&body=' +body+
+      //
+      // '">' + 'Click here to send feedback' + '<' + '/a>');
+    </script>
 
 				<form action="/signup" method="post">
           <div class="span_up">
@@ -84,14 +112,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<input type="text" class="text"
 					style="border:1px transparent solid;border-bottom:#00A65A 1px solid; " value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" > -->
 					<p>Email Address <lable> *</lable></p>
-					<input type="text" class="text" name="email"
-					style="border:1px transparent solid;border-bottom:#00A65A 1px solid; " value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" >
+					<input type="text" class="email" name="email" id="email"
+					style="border:1px transparent solid;border-bottom:#00A65A 1px solid; " value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required>
+          <!-- <div>
+            <script language="javascript">
+            document.write("wrongemail");
+            </script>
+          </div> -->
 					<p>Password <lable> *</lable></p>
 					<input type="password" value="" class="topa" name="password"
-		style="border:1px transparent solid;border-bottom:#00A65A 1px solid"; onfocus="this.value = '';" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+		style="border:1px transparent solid;border-bottom:#00A65A 1px solid"; onfocus="this.value = '';" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required>
     <!-- <a href="/auth/facebook" class="decor"><span class="fa fa-facebook"></span> Facebook</a>
     <a href="/auth/twitter" class="btn btn-info"><span class="fa fa-twitter"></span> Twitter</a>
     <a href="/auth/google" class="btn btn-info"><span class="fa fa-google"></span>google</a> -->
+
+
     <% if (message.length > 0) { %>
         <div class="alert alert-danger"><%= message %></div>
     <% } %>
@@ -102,10 +137,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 		</div>
 		</form>
-    <div class="center_me" style="margin-top: 3%;">By clicking SIGNUP you agree to the
-      <a href="/terms" style="color: #00A65A">Terms & Conditions</a>  and <a href="/privacy" style="color: #00A65A;">Privacy Policy </a> </div>
-		<div class="clear"> </div>
+
 		<h5>Do you have an account yet ? <a  class="signup play-icon popup-with-zoom-anim" href="/login">Login</a></h5>
+    <h5 class="center_me" style="margin-top: 3%;">By clicking SIGNUP you agree to the
+      <a href="/terms" style="color: #00A65A">Terms & Conditions</a>  and <a href="/privacy" style="color: #00A65A;">Privacy Policy </a> </h5>
 	</div>
 	</div>
 
